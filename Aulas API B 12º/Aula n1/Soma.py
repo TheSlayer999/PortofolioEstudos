@@ -1,20 +1,15 @@
-
-#print serve para escrever
+#print serve para escrever algo na tela
 
 #input cria um campo
 
 print("Introduza um número:")
-n1=int(input())
-
+n1=float(input())
 print("Introduza outro número:")
-n2=int(input())
+n2=float(input())
 
-#int numero normal
+#int número inteiro
 
-#float paradecimal
+#float número decimal
 
 soma=n1+n2
-
-
-
 print(n1," + ",n2," = ",soma)
