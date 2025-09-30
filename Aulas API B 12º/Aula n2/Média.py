@@ -24,7 +24,6 @@ elif media>=17.5 and media<=20:
 
 else:
     print("ERRO")
-    
 
 #if é igual a se
 #elif se quisermos adicionar mais ses
