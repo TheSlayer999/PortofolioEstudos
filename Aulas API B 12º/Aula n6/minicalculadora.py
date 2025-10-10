@@ -33,22 +33,21 @@ elif opção==7:
     print("2 - Raiz cúbica")
     print("3 - Raiz quarta")
     opção_raiz=int(input("Opção de raiz: "))
-    if opção_raiz in [1, 2, 3]:
+    if opção_raiz==1:
+       n1=float(input("Introduz o número: "))
+       if n1>=0:
+            print(f"√{n1} = {n1**0.5}")
+       else:
+            print("Erro! Não existe raiz quadrada real de número negativo!")
+    elif opção_raiz==2:
         n1=float(input("Introduz o número: "))
-        if opção_raiz==1:
-            if n1>=0:
-                print(f"√{n1} = {n1**0.5}")
-            else:
-                print("Erro! Não existe raiz quadrada real de número negativo!")
-        elif opção_raiz==2:
-            print(f"³√{n1} = {n1**(1/3)}")
-        elif opção_raiz==3:
-            if n1>=0:
-                print(f"⁴√{n1} = {n1**0.25}")
-            else:
-                print("Erro! Não existe raiz quarta real de número negativo!")
-    else:
-        print(f"Erro! A opção {opção_raiz} não está disponível.")
+        print(f"³√{n1} = {n1**(1/3)}")
+    elif opção_raiz==3:
+        n1=float(input("Introduz o número: "))
+        if n1>=0:
+            print(f"⁴√{n1} = {n1**0.25}")
+        else:
+            print("Erro! Não existe raiz quarta real de número negativo!")
 elif opção==8:
     n1=float(input("Introduz a base: "))
     n2=float(input("Introduz o expoente: "))
