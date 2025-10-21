@@ -1,11 +1,13 @@
 TESTE=0.6
 PROJETO=0.3
 ATITUDES=0.1
+
 print("Cálculo de avaliação da disciplina de API-B")
 teste=float(input("Indroduza a nota do teste: "))
 projeto=float(input("Indroduza a nota do projeto: "))
 atitudes=float(input("Indroduza a nota das  atitudes: "))
 media=(teste*TESTE)+(projeto*PROJETO)+(atitudes*ATITUDES)
+
 if media>=0 and media<4:
     print(f"A tua média foi: {media:.2f}.\nTiveste fraco, chumbas-te,esforça-te mais!")
 elif media>=4 and media<9.5:

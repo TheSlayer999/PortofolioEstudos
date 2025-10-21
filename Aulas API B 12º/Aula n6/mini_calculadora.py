@@ -1,6 +1,7 @@
 import math
 def sqrt3(num):
  return num ** (1/3)
+
 print("--- Mini Calculadora ---")
 print("Operações disponíveis: ")
 print("1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão \n5 - Quadrado de um número \n6 - Cubo de um número \n7 - Raízes \n8 - Potência")
