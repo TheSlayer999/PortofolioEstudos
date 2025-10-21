@@ -1,5 +1,4 @@
 from os import system
-system("cls")
 TESTE=0.6
 PROJETO=0.3
 ATITUDES=0.1
