@@ -43,8 +43,7 @@ while True:
 
         if opcao == 4:
             while n2 == 0:
-                print("Erro! Divisão por zero não é permitida, escolhe outro número pelo qual queres dividir: ")
-                n2 = float(input("Introduz outro número: "))
+                n2 = float(input("Divisão por zero não é permitida. \nEscolhe outro número pelo qual queres dividir: "))
                 
         system("cls")
         print("--- Mini Calculadora ---")
@@ -53,18 +52,18 @@ while True:
         elif opcao == 2:
             print(f"{n1} - {n2} = {n1 - n2:.2f}")
         elif opcao == 3:
-            print(f"{n1} × {n2} = {n1 * n2:.2f}")
+            print(f"{n1} x {n2} = {n1 * n2:.2f}")
         else:
             print(f"{n1} ÷ {n2} = {n1 / n2:.2f}")
 
     elif opcao in (5, 6):
-        n = float(input("Introduz o número: "))
+        n1 = float(input("Introduz o número: "))
         system("cls")
         print("--- Mini Calculadora ---")
         if opcao == 5:
-            print(f"{n}² = {n ** 2:.2f}")
+            print(f"{n1}² = {n1 ** 2:.2f}")
         else:
-            print(f"{n}³ = {n ** 3:.2f}")
+            print(f"{n1}³ = {n1 ** 3:.2f}")
 
     elif opcao == 7:
         print("1 - Raiz quadrada\n2 - Raiz cúbica\n3 - Raiz quarta")
@@ -73,8 +72,10 @@ while True:
             print("Opção inválida!")
             opcao_raiz = int(input("Escolhe outra opção: "))
 
+        system("cls")
+        print("--- Mini Calculadora ---")
         n1 = float(input("Introduz o número: "))
-        while opcao_raiz in (1, 3) and n < 0:
+        while opcao_raiz in (1, 3) and n1 < 0:
             print("Erro! Não existe raiz real de número negativo!")
             n1 = float(input("Introduz outro número: "))
 
@@ -91,6 +92,7 @@ while True:
         base = float(input("Introduz a base: "))
         exp = float(input("Introduz o expoente: "))
         system("cls")
+        print("--- Mini Calculadora ---")
         print(f"{base}^{exp} = {pow(base, exp):.2f}")
 
     if opcao == 9:
