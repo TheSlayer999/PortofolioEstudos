@@ -1,5 +1,4 @@
-from math import sqrt
-from math import pow
+from math import sqrt, pow
 from os import system
 
 def sqrt3(num):
