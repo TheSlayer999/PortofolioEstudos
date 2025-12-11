@@ -13,7 +13,7 @@ while True:
         tamanho=len(notas_teste)
         system("cls")
         print("--- Cálculo das Notas da Turma ---")
-        if tamanho>0:
+        if len(notas_teste)>0:
             notas_teste.sort()
             print(notas_teste)
         print(f"Faltam {n_notas} notas.")
@@ -22,8 +22,9 @@ while True:
         while adicionar<0 or adicionar>20:
             system("cls")
             print("--- Cálculo das Notas da Turma ---")
-            notas_teste.sort()
-            print(notas_teste)
+            if len(notas_teste)>0:
+                notas_teste.sort()
+                print(notas_teste)
             print(f"Faltam {n_notas} notas.")
             print("As notas têm que estar entre 0-20")
             print("Introduza as notas abaixo: ")
