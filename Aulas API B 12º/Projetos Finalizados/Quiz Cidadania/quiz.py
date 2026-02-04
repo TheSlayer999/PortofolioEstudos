@@ -16,6 +16,11 @@ n_perguntas=10
 certas=0
 erradas=0
 
+os.system("cls" if os.name=="nt" else"clear")
+print("--- Quiz de Cidadania ---\n")
+print("Bem-vindo ao Quiz de Cidadania, o quiz conciste num conjunto de 10 perguntas relacionadas com a disciplina de cidadania.\nBoa Sorte!")
+sleep(7)
+
 for i in range (len(pr)):
     os.system("cls" if os.name=="nt" else"clear")
     print("--- Quiz de Cidadania ---\n")
